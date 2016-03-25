@@ -1,4 +1,3 @@
-#TEST
 # Add Homebrew `/usr/local/bin` and User `~/bin` to the `$PATH`
 PATH=/usr/local/bin:$PATH
 PATH=$HOME/bin:$PATH

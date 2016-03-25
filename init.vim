@@ -7,6 +7,7 @@ call vundle#begin()
 "Vundle Plugins
 Plugin 'VundleVim/Vundle.vim'
 Plugin 'mattn/emmet-vim'
+Plugin 'terryma/vim-multiple-cursors'
 
 "End Vundle Plugins
 call vundle#end()
