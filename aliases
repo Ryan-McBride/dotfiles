@@ -17,7 +17,6 @@ alias lsd='ls -l | grep "^d"'
 alias u='cd ..'
 alias v='nvim'
 alias vrc='nvim ~/.config/nvim/init.vim'
-alias prof='nvim ~/.bash_profile'
 alias irc='irssi -n peeNamaste -c irc.synirc.net'
 alias prof="nvim -p ~/.bash_profile ~/.aliases"
 alias rprof=". ~/.bash_profile"
