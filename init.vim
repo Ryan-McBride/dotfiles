@@ -8,6 +8,8 @@ call vundle#begin()
 Plugin 'VundleVim/Vundle.vim'
 Plugin 'mattn/emmet-vim'
 Plugin 'terryma/vim-multiple-cursors'
+Plugin 'leafgarland/typescript-vim'
+Plugin 'jiangmiao/auto-pairs'
 
 "End Vundle Plugins
 call vundle#end()
@@ -35,6 +37,7 @@ set encoding=utf8
 colorscheme molokai
 let g:molokai_original = 1
 
+
 "backup
 set nobackup
 set nowb
@@ -47,22 +50,20 @@ set shiftwidth=2
 set tabstop=2
 
 "remaps
-nmap s :w <CR>
-nmap qq :q <CR>
-nmap tt :NERDTreeTabsToggle <CR>
+nmap s :w<CR>
+nmap qq :q<CR>
+nmap Q :q!<CR>
+nmap <silent> <Leader>t :NERDTreeTabsToggle <CR>
 nmap <F2> <Esc>:%s/
 
-inoremap ( ()<Left>
-inoremap <expr> ) strpart(getline('.'), col('.')-1, 1) == ")" ? "<Right>" : ")" 
-inoremap [ []<Left>
-inoremap <expr> ] strpart(getline('.'), col('.')-1, 1) == "]" ? "<Right>" : "]" 
-inoremap { {}<Left>
-inoremap <expr> } strpart(getline('.'), col('.')-1, 1) == "}" ? "<Right>" : "}" 
-
 imap <F3>c console.log('')<Left><Left>
+xnoremap <F3>c cconsole.log()<Esc>P
 imap <F3>f function(){}<Left><CR><CR><Up><Tab>
 
-xnoremap <F3>c cconsole.log()<Esc>P
+"semicolon magic
+inoremap <F4> <Esc>A;<Esc>
+nnoremap <F4> A;<Esc>
+vnoremap <F4> <Esc>A;<Esc>
 
 " Quickly edit / reload .vimrc
 nmap <silent> <leader>ev :e $MYVIMRC<CR>
@@ -85,4 +86,14 @@ nmap <silent> <leader>sv :so $MYVIMRC<CR>
   "airline
   set laststatus=2
   let g:airline#extensions#branch#enabled = 1
-  let g:airline_powerline_fonts = 1 
+  let g:airline_powerline_fonts = 1
+
+  "emmet
+  let g:user_emmet_install_global = 0
+  autocmd FileType html,css,js,ts EmmetInstall
+
+  "multiple-cursors
+  let g:multi_cursor_next_key='<C-n>'
+  let g:multi_cursor_prev_key='<C-p>'
+  let g:multi_cursor_skip_key='<C-x>'
+  let g:multi_cursor_quit_key='<Esc>'
