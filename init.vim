@@ -10,6 +10,7 @@ Plugin 'mattn/emmet-vim'
 Plugin 'terryma/vim-multiple-cursors'
 Plugin 'leafgarland/typescript-vim'
 Plugin 'jiangmiao/auto-pairs'
+Plugin 'pangloss/vim-javascript'
 
 "End Vundle Plugins
 call vundle#end()
