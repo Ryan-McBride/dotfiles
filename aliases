@@ -14,11 +14,11 @@ alias la="ls -lha"
 # List only directories
 alias lsd='ls -l | grep "^d"'
 
-alias u='cd ..'
-alias v='nvim'
-alias vrc='nvim ~/.config/nvim/init.vim'
+alias ..='cd ..'
+alias v='vim'
+alias vrc='vim ~/.config/nvim/init.vim'
 alias irc='irssi -n peeNamaste -c irc.synirc.net'
-alias prof="nvim -p ~/.bash_profile ~/.aliases"
+alias prof="vim -p ~/.bash_profile ~/.aliases"
 alias rprof=". ~/.bash_profile"
 
 #git aliases
