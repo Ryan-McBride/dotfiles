@@ -41,6 +41,27 @@ set ignorecase
 set backspace=2
 runtime macros/matchit.vim
 
+"arrowkeys
+inoremap ∆ <Down>
+vnoremap ∆ <Down>
+nnoremap ∆ <Down>
+inoremap ˚ <Up>
+vnoremap ˚ <Up>
+nnoremap ˚ <Up>
+inoremap ¬ <Right>
+vnoremap ¬ <Right>
+nnoremap ¬ <Right>
+inoremap ˙ <Left>
+vnoremap ˙ <Left>
+nnoremap ˙ <Left>
+
+"semicolon magic
+nnoremap … <Esc>A;<Esc>
+vnoremap … <Esc>A;<Esc>
+inoremap … <Esc>A;<Esc>
+
+
+
 let mapleader = " "
 
 let g:ale_linters = {
