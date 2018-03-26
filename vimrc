@@ -13,6 +13,7 @@ Plugin 'vim-airline/vim-airline-themes'
 Plugin 'pangloss/vim-javascript'
 Plugin 'terryma/vim-multiple-cursors'
 Plugin 'jiangmiao/auto-pairs'
+Plugin 'ervandew/supertab'
 Plugin 'rafi/awesome-vim-colorschemes'
 call vundle#end()
 filetype plugin indent on
