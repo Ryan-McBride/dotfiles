@@ -16,8 +16,7 @@ alias lsd='ls -l | grep "^d"'
 
 alias ..='cd ..'
 alias v='vim'
-alias vrc='vim ~/.config/nvim/init.vim'
-alias irc='irssi -n peeNamaste -c irc.synirc.net'
+alias vrc='vim ~/.vimrc'
 alias prof="vim -p ~/.bash_profile ~/.aliases"
 alias rprof=". ~/.bash_profile"
 
@@ -29,6 +28,7 @@ alias psh='git push'
 alias gp='git pull'
 alias go='git checkout'
 alias gd='git diff'
+alias grh='git reset HEAD~'
 
 #functional aliases
 mkcd(){
@@ -40,6 +40,9 @@ gcd(){
   git clone "$1" "$2"
   cd "$2"
 }
+
+#play a noise (for notifications)
+alias beep='afplay /System/Library/Sounds/Tink.aiff'
 
 #script aliases
 alias play='python ~/.scripts/folderAfplay.py'

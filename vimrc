@@ -18,6 +18,8 @@ Plugin 'rafi/awesome-vim-colorschemes'
 call vundle#end()
 filetype plugin indent on
 
+set ttimeout
+set ttimeoutlen=100
 set ruler
 set smartindent
 set smartcase
@@ -61,10 +63,11 @@ vnoremap … <Esc>A;<Esc>
 inoremap … <Esc>A;<Esc>
 
 
-
 let mapleader = " "
+
+nnoremap <leader>t :NERDTreeToggle<CR>
 
 let g:ale_linters = {
 \ 'javascript': ['eslint'],
 \}
-let g:airline_theme='vice'
+let g:airline_theme='dracula'
