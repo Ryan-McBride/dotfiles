@@ -15,6 +15,7 @@ Plugin 'terryma/vim-multiple-cursors'
 Plugin 'jiangmiao/auto-pairs'
 Plugin 'ervandew/supertab'
 Plugin 'rafi/awesome-vim-colorschemes'
+Plugin 'mattn/emmet-vim'
 call vundle#end()
 filetype plugin indent on
 
