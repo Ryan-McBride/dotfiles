@@ -43,6 +43,8 @@ set ignorecase
 set backspace=2
 runtime macros/matchit.vim
 
+let mapleader = " "
+
 "arrowkeys
 inoremap ∆ <Down>
 vnoremap ∆ <Down>
@@ -57,13 +59,16 @@ inoremap ˙ <Left>
 vnoremap ˙ <Left>
 nnoremap ˙ <Left>
 
+"quick exit
+inoremap jj <Esc>
+
+"leader window
+nnoremap <leader>w <C-w>
+
 "semicolon magic
 nnoremap … <Esc>A;<Esc>
 vnoremap … <Esc>A;<Esc>
 inoremap … <Esc>A;<Esc>
-
-
-let mapleader = " "
 
 nnoremap <leader>t :NERDTreeToggle<CR>
 
