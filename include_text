@@ -1,0 +1,5 @@
+# dotfilesinclude
+for file in ~/.{aliases,settings}; do
+  [ -r "$file" ] && source "$file"
+done
+unset file

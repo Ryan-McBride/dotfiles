@@ -2,14 +2,13 @@
 TIMESTAMP=`date +%Y-%m-%d-%s`
 DIRECTORY='.backup/'$TIMESTAMP
 mkdir -p $DIRECTORY
-cp ~/.bash_profile $DIRECTORY'/bash_profile'
-cp ~/.aliases $DIRECTORY'/aliases'
-cp ~/.vimrc $DIRECTORY'/vimrc'
-cp ~/.bash_prompt $DIRECTORY'/bash_prompt'
+cp $HOME/.settings $DIRECTORY'/settings'
+cp $HOME/.aliases $DIRECTORY'/aliases'
+cp $HOME/.vimrc $DIRECTORY'/vimrc'
 
-cp ./bash_profile ~/.bash_profile
-cp ./aliases ~/.aliases
-cp ./vimrc ~/.vimrc
-cp ./bash_prompt ~/.bash_prompt
+grep -lr dotfilesinclude $HOME/.bash_profile || cat ./include_text >> $HOME/.bash_profile
+cp ./aliases $HOME/.aliases
+cp ./vimrc $HOME/.vimrc
+cp ./settings $HOME/.settings
 
 echo 'The systemfiles have been updated from the files in this directory'
