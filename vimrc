@@ -3,10 +3,9 @@ filetype off
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 Plugin 'VundleVim/Vundle.vim'
-Plugin 'w0rp/ale'
 Plugin 'scrooloose/nerdtree'
-Plugin 'jistr/vim-nerdtree-tabs'
 Plugin 'bling/vim-airline'
+Plugin 'w0rp/ale'
 Plugin 'scrooloose/nerdcommenter'
 Plugin 'airblade/vim-gitgutter'
 Plugin 'vim-airline/vim-airline-themes'
@@ -16,6 +15,10 @@ Plugin 'jiangmiao/auto-pairs'
 Plugin 'ervandew/supertab'
 Plugin 'rafi/awesome-vim-colorschemes'
 Plugin 'mattn/emmet-vim'
+Plugin 'mxw/vim-jsx'
+Plugin 'simeji/winresizer'
+Plugin 'SirVer/ultisnips'
+Plugin 'leafgarland/typescript-vim'
 call vundle#end()
 filetype plugin indent on
 
@@ -71,4 +74,9 @@ nnoremap <leader>t :NERDTreeToggle<CR>
 let g:ale_linters = {
 \ 'javascript': ['eslint'],
 \}
+let g:airline#extensions#ale#enabled = 1
 let g:airline_theme='dracula'
+let g:UltiSnipsExpandTrigger="<tab>"
+let g:UltiSnipsJumpForwardTrigger="<c-b>"
+let g:UltiSnipsJumpBackwardTrigger="<c-z>"
+let g:NERDSpaceDelims = 1
