@@ -8,7 +8,7 @@
   ~/.bash_profiles
   ~/.aliases
   ~/.vimrc
-  ~/.bash_prompt
+  ~/.settings
   ```
   
 ## Commands:
