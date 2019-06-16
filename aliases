@@ -17,7 +17,7 @@ alias lsd='ls -l | grep "^d"'
 alias ..='cd ..'
 alias v='vim'
 alias vrc='vim ~/.vimrc'
-alias prof="vim -p ~/.bash_profile ~/.aliases"
+alias prof="vim -p ~/.bash_profile ~/.aliases ~/.settings"
 alias rprof=". ~/.bash_profile"
 
 #git aliases
