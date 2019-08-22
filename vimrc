@@ -19,6 +19,7 @@ Plugin 'mxw/vim-jsx'
 Plugin 'simeji/winresizer'
 Plugin 'SirVer/ultisnips'
 Plugin 'leafgarland/typescript-vim'
+Plugin 'ruanyl/vim-fixmyjs'
 call vundle#end()
 filetype plugin indent on
 
