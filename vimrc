@@ -71,7 +71,7 @@ inoremap … <Esc>A;<Esc>
 let mapleader = " "
 
 nnoremap <leader>t :NERDTreeToggle<CR>
-nnoremap <leader>f :Fixmyjs<CR>
+nnoremap <leader>f :w <bar> Fixmyjs<CR>
 
 let g:ale_linters = {
 \ 'javascript': ['eslint'],
