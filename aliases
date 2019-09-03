@@ -50,6 +50,11 @@ psh(){
   fi
 }
 
+function cd_up() {
+  cd $(printf "%0.0s../" $(seq 1 $1));
+}
+alias 'cd..'='cd_up'
+
 #play a noise (for notifications)
 alias beep='afplay /System/Library/Sounds/Tink.aiff'
 
