@@ -5,7 +5,7 @@
   
 ## Files affected:
   ```
-  ~/.bash_profiles
+  ~/.bash_profile
   ~/.aliases
   ~/.vimrc
   ~/.settings
