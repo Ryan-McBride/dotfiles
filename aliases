@@ -28,6 +28,7 @@ alias gp='git pull'
 alias go='git checkout'
 alias gd='git diff'
 alias grh='git reset HEAD~'
+alias gh='git log --decorate --graph --oneline'
 
 #functional aliases
 mkcd(){

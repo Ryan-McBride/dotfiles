@@ -20,13 +20,14 @@ Plugin 'simeji/winresizer'
 Plugin 'SirVer/ultisnips'
 Plugin 'leafgarland/typescript-vim'
 Plugin 'ruanyl/vim-fixmyjs'
+Plugin 'vim-scripts/Greplace.vim'
+Plugin 'alvan/vim-closetag'
 call vundle#end()
 filetype plugin indent on
 
 set ttimeout
 set ttimeoutlen=100
 set ruler
-set smartindent
 set smartcase
 set number
 set showmatch
@@ -35,11 +36,9 @@ set guifont=Hack
 set hls
 syntax on
 colorscheme dracula
-
 set nobackup
 set nowb
 set noswapfile
-
 set expandtab
 set smarttab
 set shiftwidth=2
@@ -47,6 +46,8 @@ set tabstop=2
 set ignorecase
 set backspace=2
 runtime macros/matchit.vim
+
+au BufNewFile,BufRead *.ejs set filetype=html
 
 "arrowkeys
 inoremap ∆ <Down>
@@ -67,14 +68,17 @@ nnoremap … <Esc>A;<Esc>
 vnoremap … <Esc>A;<Esc>
 inoremap … <Esc>A;<Esc>
 
-
 let mapleader = " "
 
 nnoremap <leader>t :NERDTreeToggle<CR>
 nnoremap <leader>f :w <bar> Fixmyjs<CR>
 
+iabbrev </ </<C-X><C-O>
+
 let g:ale_linters = {
 \ 'javascript': ['eslint'],
+\ 'jsx': ['eslint'],
+\ 'scss': ['sass-lint'],
 \}
 let g:airline#extensions#ale#enabled = 1
 let g:airline_theme='dracula'
@@ -82,3 +86,4 @@ let g:UltiSnipsExpandTrigger="<tab>"
 let g:UltiSnipsJumpForwardTrigger="<c-b>"
 let g:UltiSnipsJumpBackwardTrigger="<c-z>"
 let g:NERDSpaceDelims = 1
+let g:closetag_filenames = '*.html,*.xhtml,*.phtml,*.jsx'
