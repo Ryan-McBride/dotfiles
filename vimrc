@@ -75,9 +75,10 @@ nnoremap <leader>f :w <bar> Fixmyjs<CR>
 
 iabbrev </ </<C-X><C-O>
 
+let g:ale_linter_aliases = {'jsx': ['css', 'javascript']}
 let g:ale_linters = {
 \ 'javascript': ['eslint'],
-\ 'jsx': ['eslint'],
+\ 'jsx': ['eslint', 'stylelint'],
 \ 'scss': ['sass-lint'],
 \}
 let g:airline#extensions#ale#enabled = 1
