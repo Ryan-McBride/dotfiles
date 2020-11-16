@@ -6,7 +6,7 @@ cp $HOME/.settings $DIRECTORY'/settings'
 cp $HOME/.aliases $DIRECTORY'/aliases'
 cp $HOME/.vimrc $DIRECTORY'/vimrc'
 
-grep -lr dotfilesinclude $HOME/.bash_profile || cat ./include_text >> $HOME/.bash_profile
+grep -lr dotfilesinclude $HOME/.zshrc || cat ./include_text >> $HOME/.zshrc
 cp ./aliases $HOME/.aliases
 cp ./vimrc $HOME/.vimrc
 cp ./settings $HOME/.settings

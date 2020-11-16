@@ -13,7 +13,6 @@ Plugin 'pangloss/vim-javascript'
 Plugin 'terryma/vim-multiple-cursors'
 Plugin 'jiangmiao/auto-pairs'
 Plugin 'ervandew/supertab'
-Plugin 'rafi/awesome-vim-colorschemes'
 Plugin 'mattn/emmet-vim'
 Plugin 'mxw/vim-jsx'
 Plugin 'simeji/winresizer'
@@ -22,6 +21,7 @@ Plugin 'leafgarland/typescript-vim'
 Plugin 'ruanyl/vim-fixmyjs'
 Plugin 'vim-scripts/Greplace.vim'
 Plugin 'alvan/vim-closetag'
+Plugin 'dracula/vim', { 'name': 'dracula' }
 call vundle#end()
 filetype plugin indent on
 
