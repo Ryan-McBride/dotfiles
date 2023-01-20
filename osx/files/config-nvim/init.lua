@@ -103,6 +103,7 @@ vim.keymap.set('n', '<leader>fb', builtin.buffers, {})
 vim.keymap.set('n', '<leader>fh', builtin.help_tags, {})
 -- nvim-tree
 require('nvim-tree').setup({
+  width = 40,
   view = {
     width = 40,
     mappings = {
