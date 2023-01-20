@@ -24,12 +24,7 @@ map('n', '<Leader>f', ":ALEFix<CR>")
 -- plugins
 require('packer').startup(function(use)
   use 'wbthomason/packer.nvim'
-  use {
-    'mattn/emmet-vim',
-    config = function()
-      require('emmet-vim').setup()
-    end
-  }
+  use 'mattn/emmet-vim'
   use 'lewis6991/gitsigns.nvim'
   use {
     'numToStr/Comment.nvim',
@@ -109,6 +104,7 @@ vim.keymap.set('n', '<leader>fh', builtin.help_tags, {})
 -- nvim-tree
 require('nvim-tree').setup({
   view = {
+    width = 40,
     mappings = {
       list = {
         {
