@@ -1,0 +1,12 @@
+tap "charmbracelet/tap"
+cask "font-hack-nerd-font"
+
+brew "wget"
+brew "fd"
+brew "crush"
+brew "glow"
+brew "neovim"
+brew "luarocks"
+brew "ripgrep"
+brew "ffmpeg"
+brew "yt-dlp"
