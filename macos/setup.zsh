@@ -45,4 +45,8 @@ wget -qO- https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.3/install.sh | bash
 echo "Installing iTerm2 theme (set the font to Hack-NFM 12pt while you're over there)"
 open ./src/Dracula.itermcolors
 
+echo "Installing karabiner elements JSON (not sure if installing karabiner after these steps overwrites anything but probably not)"
+mkdir -p ~/.config/karabiner
+cp ./src/karabiner.json ~/.config/karabiner/karabiner.json
+
 echo "Done. Restart your shell or: exec zsh"
