@@ -1,5 +1,6 @@
 tap "charmbracelet/tap"
 cask "font-hack-nerd-font"
+cask "marta"
 
 brew "tmux"
 brew "wget"
